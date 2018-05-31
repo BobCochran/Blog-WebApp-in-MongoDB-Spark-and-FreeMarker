@@ -1,4 +1,4 @@
-# M101J MongoDB Blog
+# Online Class "M101J" MongoDB Blog
 
 This is some of the blog content used in the MongoDB University course "M101J", as of the December 2017 iteration. What this project attempts to do is to modernize some of the Java tools, and also utilize the features of MongoDB Community Edition 3.6.
 
@@ -10,7 +10,7 @@ It appears that the original project (in the MASTER branch) was set up as an Ecl
 
 What things you need to install the software and how to install them.
 
-This project can run on any laptop or desktop computer. The principal requirement is a computer which can run an instance of MongoDB Community Edition. We suggest that you have at least 16 Gb of memory, and a sufficiently new Intel-based processor with virtualization extensions turned on, in case you want to run virtual machines in the future. The project is presented principally as an Apache Maven project, so an understanding of the Maven build tool and the specific archetype being used will be very helpful.
+This project can run on any commodity laptop or desktop computer. The principal requirement is a computer which can run an instance of MongoDB Community Edition. We suggest that you have at least 16 Gb of memory, and a sufficiently new Intel-based processor with virtualization extensions turned on, in case you want to run the project from within virtual machines in the future. The project is presented principally as an Apache Maven project, so an understanding of the Maven build tool and the specific archetype being used will be very helpful.
 
 ```
 MongoDB Community Edition version 3.4.x (The posts collection can likely be installed on 3.6.x and 4.x as well)
@@ -28,7 +28,8 @@ Say what the step will be
 
 To obtain MongoDB Community Server, visit the [MongoDB Download Center](https://www.mongodb.com/download-center#atlas) and click on the Community Server tab. Follow the instructions for installing Community Server on your operating system. This step can take a little while to get the server running exactly right. Whenever possible, prefer an automated package installer tool to manual installation. The automated tools will figure out your settings and customize the environment to work well for the mongod server. Manual installation of the MongoDB binaries can take longer, especially if you are inexperienced in modifying the settings that must be changed.  
 ```
-When the mongod server is up and running correctly, install the posts collection from this repository.
+When the mongod server is up and running correctly, install the posts collection from this repository. 
+The collection appears to contain 1000 documents that quote the entire text of the Amnerican Constitution.
 ```
 
 And repeat
