@@ -26,17 +26,20 @@ A step by step series of examples that tell you how to get a development env run
 
 Say what the step will be
 
-To obtain MongoDB Community Server, visit the [MongoDB Download Center](https://www.mongodb.com/download-center#atlas) and click on the Community Server tab. Follow the instructions for installing Community Server on your operating system. This step can take a little while to get the server running exactly right. Whenever possible, prefer an automated package installer tool to manual installation. The automated tools will figure out your settings and customize the environment to work well for the mongod server. Manual installation of the MongoDB binaries can take longer, especially if you are inexperienced in modifying the settings that must be changed.  
-```
+To obtain MongoDB Community Server, visit the [MongoDB Download Center](https://www.mongodb.com/download-center#atlas) and click on the Community Server tab. Follow the instructions for installing Community Server on your operating system. This step can take a little while to get the server running exactly right. Whenever possible, prefer an automated package installer tool to manual installation. The automated tools will figure out your settings and customize the environment to work well for the mongod server. Manual installation of the MongoDB binaries can take longer, especially if you are inexperienced in modifying the settings that must be changed.
+ 
 When the mongod server is up and running correctly, install the posts collection from this repository. 
-The collection appears to contain 1000 documents that quote the entire text of the Amnerican Constitution.
+```
+mongoimport --db blogtest --collection posts posts.json
 ```
 
-And repeat
+The posts collection appears to contain 1000 documents that quote the entire text of the Amnerican Constitution. You can also install the smaller posts2.json file in the same way. This file contains only one document which is a quotation of the U. S. Constitution with many comments appended.
 
 ```
-until finished
+mongoimport --db blogtest --collection posts2 posts2.json
 ```
+
+Note that if you keep the "blogtest" database ("--db") name, you will need to adjust the Java code to reference it, too. The same applies to the "posts2" collection.
 
 End with an example of getting some data out of the system or using it for a little demo
 
