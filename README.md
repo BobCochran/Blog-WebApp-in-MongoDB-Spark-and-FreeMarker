@@ -4,14 +4,20 @@ This is some of the blog content used in the MongoDB University course "M101J", 
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+It appears that the original project (in the MASTER branch) was set up as an Eclipse project. One can try to import the project into a recent version of Eclipse. It utilizes the Apache Maven build tool.  
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
+What things you need to install the software and how to install them.
+
+This project can run on any laptop or desktop computer. The principal requirement is a computer which can run an instance of MongoDB Community Edition. We suggest that you have at least 16 Gb of memory, and a sufficiently new Intel-based processor with virtualization extensions turned on, in case you want to run virtual machines in the future. The project is presented principally as an Apache Maven project, so an understanding of the Maven build tool and the specific archetype being used will be very helpful.
 
 ```
-Give examples
+MongoDB Community Edition version 3.4.x (The posts collection can likely be installed on 3.6.x and 4.x as well)
+Freemarker version 2.3.19
+Spark version 1.1.1
+Apache Maven 3.1.1 however the most recent available version of Maven is suggested.
+
 ```
 
 ### Installing
@@ -20,8 +26,9 @@ A step by step series of examples that tell you how to get a development env run
 
 Say what the step will be
 
+To obtain MongoDB Community Server, visit the [MongoDB Download Center](https://www.mongodb.com/download-center#atlas) and click on the Community Server tab. Follow the instructions for installing Community Server on your operating system. This step can take a little while to get the server running exactly right. Whenever possible, prefer an automated package installer tool to manual installation. The automated tools will figure out your settings and customize the environment to work well for the mongod server. Manual installation of the MongoDB binaries can take longer, especially if you are inexperienced in modifying the settings that must be changed.  
 ```
-Give the example
+When the mongod server is up and running correctly, install the posts collection from this repository.
 ```
 
 And repeat
